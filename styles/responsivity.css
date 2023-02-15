@@ -1,0 +1,467 @@
+@import "main.css";
+
+@media only screen and (min-width: 760px) {
+
+    .mainheader{
+
+        min-height: 40vh;
+
+    }
+
+    .mainheader--short{
+
+        max-height: 200px;
+        min-height: 0;
+    
+    }
+    
+
+    .nav__hamburger{
+
+        display: none;
+    }
+
+    .nav__menu{
+
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: var(--bg-color);
+        justify-content: flex-end;
+
+    }
+
+    .nav__menu::before{
+
+       display: none;
+
+    }
+
+    .menu__item{
+
+        width: fit-content;
+        margin: 0;
+        z-index: 1;
+        font-size: 0.8rem;
+        padding: 2.5em 0;
+    }
+
+    .menu__item > a{
+
+        margin: 0;
+        padding: 2.4em 2em;
+        border: none;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .menu__item > a:hover{
+
+        background-color: var(--secondary);
+
+    }
+
+    .active{
+
+        background-color: var(--primary);
+
+    }
+
+    .active > a{
+
+        color: var(--sec-txt-color);
+        font-weight: 300;
+
+    }
+
+    .section{
+
+        margin: 8em 1em;
+
+    }
+
+    .gallery{
+
+        text-align: center;
+
+    }
+
+    .gallery__grid{
+
+        grid-template-columns: repeat(2, minmax(250px, 400px));
+        grid-auto-rows: minmax(auto, 225px);
+        
+    }
+
+    .nav__logo {
+    }
+
+}
+
+
+
+@media only screen and (max-width: 960px) and (orientation: landscape) {
+
+
+    .mainheader{
+
+        min-height: 100vh;
+
+    }
+
+    .mainheader--short{
+
+        min-height: 0;
+
+    }
+
+    .section{
+
+        margin: 1em;
+
+    }
+
+
+}
+
+@media only screen and (min-width: 961px) {
+
+
+    .mainheader{
+
+        min-height: 80vh;
+
+    }
+
+    .mainheader--short{
+
+        max-height: 200px;
+        min-height: 0;
+    
+    }
+
+    .mainheader__title{
+
+        font-size: 4rem;
+
+
+    }
+
+    .mainheader__heading > .button--orange{
+
+        display: block;
+    }
+
+    .nav{
+
+        width: 80%;
+        margin: 2em 10%;
+
+
+    }
+
+    .mainheader__title > span{
+
+        font-size: 2.5rem;
+        font-weight: 300;
+        vertical-align: top;
+
+    }
+
+    .services{
+
+        text-align: center;
+        max-width: 800px;
+        align-self: center;
+
+    }
+
+    .services__title{
+
+        font-size: 3rem;
+        font-weight: 900;
+
+    }
+
+    .mgrid{
+
+        display: grid;
+        grid-template-columns: repeat(2,minmax(auto, 600px));
+        grid-auto-rows: 300px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10em;
+        grid-auto-flow: dense;
+        
+
+    }
+
+    .mgrid img{
+
+        max-height: none;
+
+    }
+
+    .mgrid__img--left, .mgrid__img--right{
+
+       height: 90%;
+        
+ 
+    }
+
+    .mgrid__img--right{
+
+        grid-column-start: 2;
+        margin-left: 5%;   
+
+    }
+
+    .mgrid__img--left{
+
+        margin-right: 5%;
+
+    }
+
+    .mgrid__item__text{
+
+        box-sizing: border-box;
+        margin: 5%;
+
+    }
+
+    .mgrid__item__text > .item__title{
+
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.5rem;
+
+    }
+
+    .trust{
+
+        min-height: 300px;
+
+    }
+
+    .trust__container{
+
+        margin: 5em auto;
+
+    }
+
+    .trust__title{
+
+        font-size: 1.5rem;
+
+    }
+
+    .references{
+
+
+        margin: 8em 0;
+
+
+    }
+
+    .references__desc{
+
+        max-width: 800px;
+        margin: 3em auto;
+        text-align: center;
+
+    }
+
+    .references__title{
+
+        font-size: 3em;
+        text-align: center;
+
+    }
+
+    .references__flex{
+
+        margin-bottom: 3em;
+
+    }
+
+    .references__flex > .flex__item{
+
+        max-width: 30%;
+        position: relative;
+
+    
+    }
+
+    .references__flex .flex__item__img{
+
+        
+        width: 100%;
+        object-fit: contain;
+    
+    
+    }
+
+    .flex__text{
+
+        z-index: 5;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        opacity: 0;
+        color: var(--sec-txt-color);
+        background-color: var(--primary);
+
+    }
+
+    .flex__text > .flex__title{
+
+        text-transform: uppercase;
+        font-size: 1.2rem;
+
+    }
+
+    .flex__text:hover{
+
+        animation-duration: 500ms;
+        opacity: 0.9;
+
+    }
+
+    .footer{
+
+        margin-bottom: 2em;
+
+    }
+
+    .footer__title{
+
+        font-size: 3rem;
+
+    }
+
+    .section{
+
+        margin: 8em;
+
+    }
+
+    .section__title{
+
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 900;
+    
+    }
+
+    .section__list{
+
+        margin: 2em 3em;
+
+    }
+
+    .section__list--marginless{
+
+        margin: 0 2em;
+    
+    }
+
+    .contact{
+
+        margin: 10em 0;
+
+    }
+
+    .contact__title{
+
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .contact__desc{
+
+        text-align: center;
+
+    }
+
+    .contact__grid{
+        margin: auto;
+        margin-top: 5em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        align-items: center;
+
+    }
+
+    .contact__link{
+
+        margin-left: 10vw;
+        margin-right: -10vw;
+
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 1281px) {
+    
+    
+
+    .mainheader{
+
+        min-height: 95vh;
+
+    }
+
+    .mainheader--short{
+
+        max-height: 200px;
+        min-height: 0;
+    
+    }
+
+    .mainheader__title{
+
+        font-size: 6rem;
+
+    }
+
+    .gallery__title{
+
+        font-size: 3rem;
+
+    }
+
+    .gallery__grid{
+
+        margin: 5em 0;
+        grid-template-columns: repeat(3, minmax(250px, 400px));
+        grid-auto-rows: minmax(auto, 225px);
+        
+
+
+    }
+
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .mainheader{
+
+        background-image: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url("../media/pageheader-3100w.jpg");
+
+    }
+
+}
