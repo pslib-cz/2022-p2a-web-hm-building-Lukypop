@@ -428,3 +428,7 @@ img {
 .grid__1x3{
     grid-row: span 3;
 }
+
+.samelzi__list--marginless {
+    margin: 0;
+}
