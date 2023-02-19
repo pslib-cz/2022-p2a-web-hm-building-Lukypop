@@ -387,37 +387,23 @@ img {
 
 .samelzi{
     margin: 1em;
-    flex-grow: 5;
+    flex-grow: 1;
 }
 
 .content_wrapper{
 
     max-width: 1100px;
-    margin: auto;
-
 }
 
 .samelzi__text{
     max-width: 1100px;
-    margin: auto;
-
 }
-
 
 .samelzi__subtitle{
     font-weight: 800;
 }
 
 .samelzi__list__item::marker{
-
     color: var(--primary);
     font-size: 1.5rem;
-
-
-}
-
-.samelzi__list--marginless{
-
-    margin: 0;
-
 }
