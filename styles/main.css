@@ -517,7 +517,13 @@ img {
 
 
 @media only screen and (min-width: 961px) {
+    .mainheader{
+        min-height: 65vh;
+    }
 
+    .mainheader--short{
+        max-height: 200px;
+    }
     .mainheader__title{
         font-size: 4rem;
     }
@@ -640,18 +646,21 @@ img {
     }
 
     .flex__text{
-        z-index: 5;
+        z-index: 6;
         position: absolute;
         display: flex;
+
         flex-direction: column;
         justify-content: center;
-        height: 100%;
+    
         left: 0;
         top: 0;
+
+        height: 100%;
         width: 100%;
-        margin: 0;
+    
         opacity: 0;
-        color: var(--secondary);
+        color: var(--secondary-text);
         background-color: var(--primary);
 
     }
@@ -695,28 +704,20 @@ img {
     }
 
     .samelzi__list--marginless{
-
         margin: 0 2em;
-    
     }
 
     .kontakt{
-
         margin: 10em 0;
-
     }
 
     .kontakt__title{
-
         font-size: 3rem;
         text-align: center;
-
     }
 
     .kontakt__desc{
-
         text-align: center;
-
     }
 
     .kontakt__grid{
@@ -738,19 +739,15 @@ img {
 
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1321px) {
 
     .mainheader{
-
         min-height: 95vh;
-
     }
 
     .mainheader--short{
-
         max-height: 200px;
         min-height: 0;
-    
     }
     .mainheader__title{
         font-size: 6rem;
